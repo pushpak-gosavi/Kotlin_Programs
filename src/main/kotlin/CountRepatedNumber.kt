@@ -42,4 +42,16 @@ fun main(){
 
 
     println(charCountMap)
+
+    val newCount = name.groupBy { it }.mapValues { it.value.size }
+    println(newCount)
+    for ((key, value) in newCount){
+        println("$key is repated $value time")
+    }
+
+    val newMap = mutableMapOf<Char, Int>()
+    for (char in name) {
+        newMap[char] = newMap.getOrDefault(char, 0) + 1
+    }
+    println(newMap)
 }
