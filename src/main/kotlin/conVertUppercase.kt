@@ -4,9 +4,9 @@ fun main(){
     var newString=""
     for (i in name){
         if (i.isUpperCase())
-            newString+=i.toLowerCase()
+            newString+= i.lowercaseChar()
         else if (i.isLowerCase())
-            newString+=i.toUpperCase()
+            newString+= i.uppercaseChar()
         else if(i==' ')
             newString+=' '
     }

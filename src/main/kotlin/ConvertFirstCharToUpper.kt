@@ -7,19 +7,20 @@ fun main(){
     /**
      * Convert first char to uppercaase
      */
-    /*val listName= name.split(' ')
+    val listName= name.split(' ')
     var upperName=""
     println(listName)
     for (i in listName){
         for (j in i.indices) {
-            if(j==0)
-                upperName += i[j].uppercase(Locale.getDefault())
-            else upperName += i[j]
+            upperName += if(j==0)
+                i[j].uppercaseChar()
+            else i[j]
         }
         upperName+=" "
     }
 
-    println(upperName)*/
+
+    println(upperName)
     /**
      * Count duplicate from string
      */
