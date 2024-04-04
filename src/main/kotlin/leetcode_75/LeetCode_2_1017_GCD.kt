@@ -2,7 +2,7 @@ package leetcode_75
 
 fun main(){
     val str1 = "AB"
-    val str2="ABABAB"
+    val str2="AB"
 
 
     println(gcdOfStrings(str1 = str1, str2 = str2))
