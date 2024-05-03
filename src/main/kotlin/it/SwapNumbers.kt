@@ -7,9 +7,9 @@ fun main(){
     println("a=$a and b=$b")
  //   a=b.also { b=a }
 
-    a = a+b
+    a += b
     b= a-b
-    a= a-b
+    a -= b
 
     println("a=$a and b=$b")
 }
