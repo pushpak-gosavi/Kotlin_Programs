@@ -9,7 +9,7 @@ fun main(){
 
 fun String.hashConverter():String{
     var newHash=""
-    for (i in 0 until this.length){
+    for (i in indices){
         if(i<2)
             newHash+=this[i]
         else newHash+="#"
